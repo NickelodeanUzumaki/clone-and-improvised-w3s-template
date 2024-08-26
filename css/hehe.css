@@ -1,0 +1,556 @@
+/* Reset CSS */
+/* This section removes default padding and margin from all elements and sets the box-sizing property to border-box to include padding and border in the element's total width and height. */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Common - Utility classes for common styling */
+.clear { /* Clear floats */
+    clear: both;
+}
+
+.text-white { /* Set text color to white */
+    color: #fff !important;
+}
+
+.text-center { /* Center text alignment */
+    text-align: center !important;
+}
+
+.row { /* Row class to handle negative margins for columns */
+    margin-left: -8px;
+    margin-right: -8px; /* cannot delete them because will error in PC */
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col { /* Column class to handle floating and padding for columns */
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-third {  /* Set width of columns to one-third of the container */
+    width: calc(100%/3);
+}
+
+.col-full {
+    width: 100%;
+}
+
+.col-half { /* Set width of columns to one-half of the container */
+    width: 50%;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+.mt-32 {
+    margin-top: 32px;
+}
+
+/* for the send button */
+.btn {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    /* input type submit style for safari and for normal web */
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+/* set the font for the whole file respectively */
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000; 
+    z-index: 1;
+}
+
+/* Nav begin - Set up navigation container */
+#nav {
+    display: inline-block;
+}
+
+/* Remove default list styles for nav and subnav */
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav > li { /* Main nav items displayed inline */
+    display: inline-block;
+}
+
+#nav li { /* All nav list items positioned relatively for dropdowns */
+    position: relative;
+}
+
+#nav > li > a { /* Uppercase text for main nav links */
+    text-transform: uppercase;
+}
+
+#nav li a { /* Styling for all nav links */
+    color: #fff;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block; /* Block display for clickable area */
+}
+
+#nav li:hover .subnav { /* Display subnav on hover of main nav item */
+    display: block; /* Show subnav on hover */
+}
+
+#nav .subnav li:hover a, #nav > li:hover > a { /* Change link and background color on hover for subnav and main nav items */
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Subnav hidden by default and styled for dropdown */
+#nav .subnav {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow */
+}
+
+#nav .subnav a { /* Styling for subnav links */
+    color:#000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {  /* Styling for nav arrows */
+    font-size: 14px;
+}
+
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn { /* Search button in header */
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+}
+
+
+#header .search-btn:hover { /* Change background color on hover for search button */
+    cursor: pointer;
+   background-color: #f44336; 
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    background-color: #000;
+}
+
+#header .menu-icon,
+#header .search-icon { /* Styling for search icon */
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+}
+/* Nav: end */
+
+/* first picture */
+#slider {
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%; 
+    background: url('/assets/img/slider.jpg') top center / cover no-repeat;
+}
+
+/* center the text and change the color of it (picture)*/
+#slider .text-content { 
+    position: absolute;
+    bottom: 48px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    text-shadow: 0 0 2px #000;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#slider .text-description {
+    font-size: 20px;
+    margin-top: 25px;
+    /* text-shadow: 0 0 1px #000; can use in the description if the picture is not easy to read the word */
+}
+/* end first picture */
+
+/* about section: begin */
+#content .content-section {
+    width: 800px;
+    max-width: 100%; /* use when the width is below 800px */
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text {
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+    line-height: 1.4; 
+}
+/* about section: end */
+
+/* picture for the three */
+#content .members-list {
+    margin-top: 32px;
+    /* overflow: hidden; */
+}
+
+
+
+/* edit the font size */
+#content .member-name {
+    font-size: 15px;
+}
+
+/* the image position and scale it */
+#content .member-img {
+    width: 160px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* tour (favorite) section */
+.tour-section {
+    background-color: #000;
+}
+
+/* character information */
+.tickets-list {
+    list-style: none;
+    background-color: #fff;
+    margin-top: 40px;
+    /* margin: 32px -10px 48px; */
+}
+
+.tickets-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom:  1px solid #ddd;
+}
+
+/* make the spacing between each line */
+.tickets-list .hokage { 
+    /* for hokage section first */
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+
+/* for Sakura, her is in the quantity */
+.tickets-list .quantity {
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    /* because we used float so that we can use negative number in the margin */
+    margin-top: -2px;
+}
+
+/* Character' picture */
+.pic-name {
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+.place-img {
+    width: 100%;
+    display: block;
+}
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.pic-content {
+    padding: 16px;
+    font-size: 15px;
+    background-color: #fff;
+}
+
+.pic-heading {
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+.name-time {
+    margin-top: 15px;
+    color: #757575;
+    opacity: 0.6;
+}
+
+.pic-description {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+/* for the character (Buy Tickets) section */
+.modal {
+    position: fixed;
+    top: 0; 
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);     /* overlay for the character when selected */
+    display: none; /*after this you will need java script, all the other steps you don't need */
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-open {
+    display: flex; /* Display modal when open */
+}
+
+
+/* making the background for the character section */
+.modal-container {
+    background: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 200px;
+    position: relative;
+    animation: modalFadeIn ease 0.5s;
+}
+
+/* making the style and color for the header of this section */
+.modal-header {
+    background: #009688;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+/* spacing between the heading and the icon */
+.modal-heading-icon {
+    margin-right: 16px;
+}
+
+/* for the close button */
+.modal-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: black;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* make the close button more clear when a user hover */
+.modal-close:hover {
+    opacity: 1;
+    color: red;
+    text-transform: capitalize;
+}
+
+/* now moving for the body (details) */
+.modal-body {
+    padding: 16px;
+}
+
+/* making each item is 1 line */
+.modal-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+/* for the input class */
+.modal-input {
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+/* Select character button details */
+#Select-char {
+    background: #009688;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+}
+
+/* Select character effect  */
+#Select-char:hover {
+    opacity: 0.6;
+}
+
+/* footer part (need help part 1) */
+.modal-footer {
+    padding: 16px;
+    text-align: right;
+}
+
+/* footer part (need help part 2) */
+.modal-footer a {
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact section */
+.contact-content {
+    margin-top: 48px;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.contact-info {
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-info a {
+    color: #101aef;
+    opacity: 0.6;
+}
+
+.contact-info a:hover {
+    opacity: 1;
+}
+
+.contact-form {
+    font-size: 15px;
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    outline: none;
+}
+
+/* Map section */
+.map-section img {
+    width: 100%;
+}
+
+/* footer section */
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-list {
+    font-size: 24px;
+}
+
+#footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .social-list a:hover {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color:rgba(0, 0, 0, 0.6);
+}
