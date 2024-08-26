@@ -8,8 +8,10 @@ This web is cloned from W3.CSS Templates and I improvised it a bit
 And Click here (I haven't add them yet) 👈 to see the results that I have learned when did the web
 
 The purpose of doing this web is to practice HTML, CSS, JavaScript and Web Responsive
+
 **Note: **
 hehe - both html and css file
+
 reponsive - for css for responsive 
 
 
