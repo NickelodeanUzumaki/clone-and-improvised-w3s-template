@@ -10,6 +10,7 @@ And Click here (I haven't add them yet) 👈 to see the results that I have lear
 The purpose of doing this web is to practice HTML, CSS, JavaScript and Web Responsive
 
 **Note: **
+
 hehe - both html and css file
 
 reponsive - for css for responsive 
