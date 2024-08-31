@@ -203,7 +203,7 @@ html {
     position: relative;
     margin-top: 46px;
     padding-top: 50%;
-    background: url(../img/slider.jpg) top center no-repeat;
+    background: url(../img/slider.jpg) cover no-repeat;
 }
 
 /* center the text and change the color of it (picture)*/
