@@ -15,6 +15,9 @@ index.html - the html file
 hehe.css - the style.css
 responsive.css- for css for responsive 
 
+**Preview of the website: **
+<img width="1663" alt="Screenshot 2024-08-31 at 3 10 25 PM" src="https://github.com/user-attachments/assets/e6082294-133a-4b88-9ab3-8d8b1349bc49">
+<img width="1661" alt="Screenshot 2024-08-31 at 3 10 42 PM" src="https://github.com/user-attachments/assets/28cc621e-1804-4e52-bc89-3bef0d408678">
 
 
 💻 Technology
