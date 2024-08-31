@@ -1,12 +1,12 @@
 # clone-and-improvised-w3s-template
 
-✍️ Description
+**✍️ Description**
 
 This web is cloned from W3.CSS Templates and I improvised it a bit
 
 [Click here](https://www.w3schools.com/w3css/tryw3css_templates_band.htm) 👈 to see the original template
 
-And [Click here](https://nickelodeanuzumaki.github.io/clone-and-improvised-w3s-template/) 👈 to see the results that I have learned when I did the web (I haven't fixed the error to appear all the CSS)
+And [Click here](https://nickelodeanuzumaki.github.io/clone-and-improvised-w3s-template/) 👈 to see the results that I have learned when I did the web (I haven't fixed the error to appear the CSS for the slider, Idk why this happen but github pages is kinda hard to figure out)
 
 The purpose of doing this web is to practice HTML, CSS, JavaScript and Web Responsive
 
