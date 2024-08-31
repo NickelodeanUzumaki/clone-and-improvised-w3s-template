@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- linking CSS file and set the height width -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it's Nick</title>
+    <link rel="icon" href="./assets/img/coffee.png">
+    <link rel="stylesheet" href="./assets/css/hehe.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css"> <!-- put that below the main css so that it has more priority -->
+    <link rel="stylesheet" href="assets/img/themify-icons/themify-icons.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- begin: Nav -->
+            <ul id="nav">
+                <li><a href="#">Home </a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li>
+                    <a href="#">More
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="https://github.com/NickelodeanUzumaki" target= "_blank">Java</a></li>
+                        <li><a href="https://nmlvo.itch.io/" target="_blank">Unity C#</a></li>
+                        <li><a href="https://www.youtube.com/@sparrowdacyan" target="_blank">Youtube</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: Nav -->
+
+            <!-- Begin: Search button-->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+            <!-- End: Search button-->
+            
+            <!-- menu icon for mobile -->
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+             </div>
+        </div>
+        
+        <div id="slider">
+            <!-- first picture: Begining (in the slider in css file)-->
+            <div class="text-content">
+                <h2 class="text-heading">Portfolio</h2>
+                <div class="text-description">of Nick Vo</div>
+                <!-- first picture: End -->
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- about (need to have a black background) section -->
+            <div id="about" class="content-section">
+                <h2 class="section-heading">About me</h2>
+                <p class="section-sub-heading">Nguyen Mai Lan (Nick) Vo</p>
+                <p class="about-text">
+                    Hi, I'm Nick. I'm currently working as a technical support engineer, which helps me enhance my critical and problem-solving skills. I achieved a High Distinction (HD) in my Java class and developed a custom program for a Tic Tac Toe game, where I implemented an AI using the minimax algorithm to determine its moves. Additionally, I scored an HD in my Games Fundamentals class, where I completed a personal project called "Skate To Home." All of the games I developed were created in Unity.
+
+                    Outside of my studies, I enjoy making YouTube videos. Although I don't have a large number of views, creating videos is a hobby that helps me relax. 
+                    And also, studying to make this website is my hobbie as well.
+                </p>
+
+                <!-- each person contains 1 div card, we need 3 cards -->
+                <div class="row members-list">
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="member-name">Naruto</p>
+                        <img src="/assets/img/member.jpg" alt="Naruto" class="member-img">
+                    </div>
+
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="member-name">Sasuke</p>
+                        <img src="/assets/img/member.jpg" alt="Sasuke" class="member-img">
+                    </div>
+
+                    <div class="col col-third s-col-full mt-32 text-center">
+                        <p class="member-name">Sakura</p>
+                        <img src="/assets/img/member.jpg" alt="Sakura" class="member-img">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tour (Character and Seasions) section -->
+            <div id ="project" class="tour-section">
+                <div class="content-section">
+                    <h2 class="section-heading text-white">Who are they</h2>
+                    <p class="section-sub-heading text-white">Pick your favorite one</p>
+
+                    <!-- Character's name -->
+                    <ul class="tickets-list">
+                        <li>Naruto <span class="hokage">Hokage</span></li>
+                        <li>Sasuke <span class="hokage">Not Hokage</span></li>
+                        <li>Sakura <span class="quantity">1</span></li>
+                    </ul>
+
+                    <!-- Their picture -->
+                    <div class="row pic-name">
+                        <div class="col col-third  s-col-full mt-16">
+                            <img src="./assets/img/naruto.jpeg" alt="Naruto" class="place-img">
+                            <div class="pic-content">
+                                <h3 class="pic-heading">Naruto</h3>
+                                <p class="name-time">Uzumaki Naruto - main character</p> <!--can change the min height in css file-->
+                                <p class="pic-description">main character</p>
+                                <button class="btn js-select-char">Select Character</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-third  s-col-full mt-16">
+                            <img src="./assets/img/sasuke.jpeg" alt="Sasuke" class="place-img">
+                            <div class="pic-content">
+                                <h3 class="pic-heading">Sasuke</h3>
+                                <p class="name-time">Uchiha Sasuke - side character</p>
+                                <p class="pic-description">side character but also strong like Naruto</p>
+                                <button class="btn js-select-char">Select Character</button>
+                            </div>
+                        </div>
+
+                        <div class="col col-third  s-col-full mt-16">
+                            <img src="./assets/img/Sakura-1.jpg" alt="Sakura" class="place-img">
+                            <div class="pic-content">
+                                <h3 class="pic-heading">Sakura</h3>
+                                <p class="name-time">Haruno Sakura - side character</p>
+                                <p class="pic-description">weakest but she is a girl so she is still strong (not really)</p>
+                                <button class="btn js-select-char">Select Character</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         <!-- open a button to select the character  -->
+        <button class="js-select-char"></button>
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
+                    <i class="ti-close"></i>
+                </div>
+
+                <header class="modal-header">
+                    <i class="modal-heading-icon ti-bag"></i>
+                    Select ONE
+                </header>
+
+                <div class="modal-body">
+                    <label for="char-quantity" class="modal-label"> <!-- for attribute can only used for id -->
+                        <i class="ti-shopping-cart"></i>
+                        Select the FAVORITE character
+                    </label>
+                    <input id="char-quantity" type="text" class="modal-input" placeholder="Are you sure?">
+
+                    <label for="char-address" class="modal-label">
+                        <i class="ti-user"></i>
+                        Send to where?
+                    </label>
+                    <input id="char-address" type="email" class="modal-input" placeholder="Gimme your email !!!">
+
+                    <button id="Select-char">
+                        Select <i class="ti-check"></i>
+                    </button>
+                </div>
+
+                <footer class="modal-footer">
+                    <p class="modal-help">Need <a
+                            href="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG9jaHQ2N2g5cG1xdXRrZmVydm02cGJsaXp1ZHBwaWR3MWFhN3lyeiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/vyTnNTrs3wqQ0UIvwE/giphy.webp">help?</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+
+        <!-- using JavaScript to appear the modal-->
+        <script>
+            const selectBtns = document.querySelectorAll('.js-select-char')
+            const modal = document.querySelector('.js-modal')
+            const modalContainer = document.querySelector('.js-modal-container')
+            const modalClose = document.querySelector('.js-modal-close')
+
+            // Hide and Show modal fuctions
+            function showSelectChar() {
+                modal.classList.add('modal-open')
+                //alert("HEHE") to test
+            }
+
+            function hideSelectChar() {
+                modal.classList.remove('modal-open')
+            }
+
+            //loop through the behaviour of clicking into the button
+            for (const selectBtn of selectBtns) {
+                selectBtn.addEventListener('click', showSelectChar)
+            }
+
+            //listen to the event of clicking to the close button
+            modalClose.addEventListener('click', hideSelectChar)
+
+            //if the user click outside of the select box >> closing the modal
+            modal.addEventListener('click', hideSelectChar)
+
+            //used to prevent the click event from propagating (bubbling up) to parent elements.
+            modalContainer.addEventListener('click', function (event) {
+                event.stopPropagation()
+            })
+        </script>
+
+            <!-- Begin: Contact (Favorite) section -->
+            <div id="Contact" class="content-section">
+                <h2 class="section-heading">Contact</h2>
+                <p class="section-sub-heading">Please contact me if you need anything</p>
+
+                <!-- For the contact (2 parts) -->
+                <div class="row contact-content">
+                    <div class="col col-half s-col-full contact-info"> <!-- left hand side of the contact -->
+                        <p><i class="ti-location-pin"></i>The Leaf Village</p>
+                        <p><i class="ti-mobile"></i> <a href="tel: 00000">No phone unfortunately</a></p>
+                        <p><i class="ti-email"></i> <a href="mailto: giavu0810@gmail.com">No email either</a> </p>
+                    </div>
+
+                    <div class="col col-half s-col-full"> <!-- right hand side of the contact -->
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-half s-col-full contact-form">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+                                <div class="col col-half s-col-full s-mt-8 contact-form">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8 contact-form">
+                                <div class="col col-full ">
+                                    <input type="text" name="" placeholder="What you wanna say" required id="" class="form-control">
+                                </div>
+                            </div>
+
+                    <!-- The send button -->
+                            <div> 
+                                <input class="contact-submit-btn btn mt-16 s-col-full s-full-width pull-right" type="submit" value="SEND">
+                            </div>
+                         </form>
+                    </div>
+                </div>
+                <!-- End: Contact (Favorite) section -->
+
+                <!-- last pic (map section) -->
+                <div class="map-section">
+                    <img src="./assets/img/862ff88bb9219695067965da144e9dbc.jpg" alt="Altogether">
+                </div>
+            </div>
+            
+
+            <!-- change new icon -->
+            <div id="footer">
+                <div class="social-list">
+                    <a href="https://www.facebook.com/profile.php?id=100036167619780" target="_blank"><i class = "ti-facebook"></i></a>
+                    <a href="https://www.instagram.com/sparrowdacyan/" target="_blank"><i class = "ti-instagram"></i></a>
+                    <a href="https://www.youtube.com/@sparrowdacyan" target="_blank"><i class = "ti-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/nguyen-mai-lan-vo/" target="_blank"><i class = "ti-linkedin"></i></a>
+                </div>
+
+                <p class="copyright">  idea from <a href="https://www.w3schools.com/w3css/tryw3css_templates_band.htm#contact" target= "_blank">w3 school</a>, improvised by Nick Vo</p>
+            </div>
+        </div>
+
+        <!-- using Javascript -->
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+        
+        //auto open/close the mobile menu
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHeight; //use with the height in #header, it's comparision so be careful
+            if (isClosed) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // auto close when selecting in the menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+                           for (var i = 0; i < menuItems. length; i++) {
+            var menuItem = menuItems[i];
+
+            menuItem.onclick = function () {
+                var isParentMenu = this.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+                if (isParentMenu) {
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
+    <!-- end using JavaScript -->
+</body>
+</html>
